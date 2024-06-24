@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dineshkumar's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7cd91fa1c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "7TddUSMBhUkFTXQMi",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <header id="home">
+      <nav class="navigation">
+        <a href="#home" class="logo">Dinesh<span class="kumar">kumar</span></a>
+        <ul class="menu-list" id="side-menu">
+          <li class="menu-item"><a href="#home">Home</a></li>
+          <li class="menu-item"><a href="#about">About</a></li>
+          <li class="menu-item"><a href="#services">Services</a></li>
+          <li class="menu-item"><a href="#projects">Projects</a></li>
+          <li class="menu-item"><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="intro-section">
+        <section class="main-title-section">
+          <div class="name-wrapper">
+            <p class="text-hi">Hi I'm</p>
+            <p class="name">Dinesh<span class="name-style">kumar</span></p>
+            <p class="profession">
+              I am a <span class="name-style">Developer</span>
+            </p>
+          </div>
+          <p class="description">
+            I am a passionate front-end developer with a keen eye for design and
+            user experience. I specialize in creating dynamic, responsive, and
+            visually appealing web applications.
+          </p>
+          <div class="button-wrapper">
+            <a
+              href="/assets/Dineshkumar_P_Resume.pdf"
+              download="Dineshkumar"
+              class="btn2"
+              >Download Resume</a
+            >
+            <a href="#about" class="btn2">Explore More</a>
+          </div>
+        </section>
+        <section class="img-section">
+          <img
+            src="/images/Dineshkumar_P-image-enhanced.png"
+            alt="Dineshkumar_photo"
+            srcset=""
+          />
+        </section>
+      </section>
+      <section class="about-section" id="about">
+        <section class="about-image">
+          <img
+            src="/images/mirror-yellow-shirt-enhanced.png"
+            alt="yellow-shirt-dineshkumar"
+          />
+        </section>
+        <section class="about-content">
+          <h1 class="sub-title">About me</h1>
+          <p class="about-description">
+            I am a dedicated front-end developer and Java developer with a
+            strong passion for creating innovative and user-friendly
+            applications. My journey in the world of software development has
+            equipped me with exceptional problem-solving skills and a keen eye
+            for detail, ensuring that every project I undertake meets the
+            highest standards of quality and functionality.
+          </p>
+          <div class="tab-wrapper">
+            <p class="tab-link active-link" onclick="tabswitch('skills')">
+              Skills
+            </p>
+            <p class="tab-link" onclick="tabswitch('education')">Education</p>
+          </div>
+          <div class="link-content active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Java</span><br />
+                Develop java application
+              </li>
+              <li>
+                <span>Web Development</span><br />
+                Web design and Interactive website using Javascript
+              </li>
+              <li>
+                <span>SQL</span><br />Develop and manage Databases (MySQL, SQL
+                server)
+              </li>
+              <li><span>C#</span><br />Backend connection using C#</li>
+            </ul>
+          </div>
+          <!--Education-->
+          <div class="link-content" id="education">
+            <ul>
+              <li>
+                <span>2020 - 2024</span><br />B.Tech - Information Technology
+                <br />
+                V.S.B Engineering College, Karur
+              </li>
+              <li>
+                <span>2019 - 2020 - HSC</span><br />Government Boys Higher
+                Secondary School, Sivagiri
+              </li>
+              <li>
+                <span>2017 - 2018 - SSLC</span><br />Government Boys Higher
+                Secondary School, Sivagiri
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <!--My services-->
+      <section class="services" id="services">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-container">
+          <div class="service-description">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web design</h2>
+            <p>
+              Create unique and visually stunning websites tailored to match
+              your brand's identity. Ensure your site stands out with a custom
+              design that reflects your business's personality and goals.
+            </p>
+          </div>
+          <div class="service-description">
+            <i class="fa-solid fa-computer"></i>
+            <h2>Software Development</h2>
+            <p>
+              Develop tailor-made software solutions that meet your specific
+              business needs. From initial concept to final deployment, we
+              ensure the software is aligned with your objectives and offers
+              robust performance and scalability..
+            </p>
+          </div>
+          <div class="service-description">
+            <i class="fa-brands fa-app-store"></i>
+            <h2>E-commerce Development</h2>
+            <p>
+              Develop powerful e-commerce platforms that drive online sales and
+              improve customer satisfaction. Integrate essential features such
+              as shopping carts, and inventory management systems.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Project-->
+      <section id="projects">
+        <div class="container">
+          <h2 class="sub-title">My Projects</h2>
+          <div class="project-list">
+            <div class="project">
+              <img
+                src="/images/Birthday_countdown.png"
+                alt="Birthday_countdown"
+              />
+              <div class="layer">
+                <h3>Birthday Countdown</h3>
+                <p>
+                  Creating a birthday countdown using HTML, CSS, and JavaScript
+                  was a rewarding project that allowed me to apply my web
+                  development skills to build an interactive and engaging user
+                  interface.
+                </p>
+                <a
+                  href="https://dineshkumar-18.github.io/Birthday-countdown/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                src="/images/bank-management.jfif"
+                alt="Birthday_countdown"
+              />
+              <div class="layer">
+                <h3>Banking Management Application using Java</h3>
+                <p>
+                  Creating a bank management system using Java and JDBC (Java
+                  Database Connectivity). The project aimed to manage various
+                  banking operations, such as account creation, deposit,
+                  withdrawal, balance inquiry, and transaction history
+                </p>
+                <a
+                  href="https://github.com/Dineshkumar-18/Bank_application"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="/images/ecommerce.jfif" alt="Birthday_countdown" />
+              <div class="layer">
+                <h3>E-Commerce Application using C#</h3>
+                <p>
+                  This E-commerce application developed using C#. It leverages
+                  ADO.NET for database operations and SQL Server as the database
+                  management system.
+                </p>
+                <a
+                  href="https://github.com/Dineshkumar-18/Ecommerce"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer section-->
+    <footer class="footer">
+      <section class="contacts" id="contact">
+        <section class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <a href="mailto:dineshmathan2@gmail.com"
+              ><i class="fa-solid fa-envelope"></i>dineshmathan2@gmail.com</a
+            >
+          </p>
+          <p>
+            <a href="tel:+919578626608"
+              ><i class="fa-solid fa-envelope"></i>+919578626608</a
+            >
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/profile.php?id=100011720859852"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://x.com/Dinesh_kumar030" target="_blank"
+              ><i class="fa-brands fa-twitter-square"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/good_character_dinesh/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/dineshkumar-p-98173a206/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <a
+            href="/assets/Dineshkumar_P_Resume.pdf"
+            download="Dineshkumar"
+            class="btn btn2"
+            >Download Resume</a
+          >
+        </section>
+        <section class="contact-right">
+          <form action="#">
+            <input
+              type="text"
+              name="Name"
+              placeholder="Your Name"
+              id="name"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              id="email"
+              autocomplete="off"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              id="message"
+              placeholder="Your Message"
+              autocomplete="off"
+            ></textarea>
+            <p id="result"></p>
+            <button type="button" onclick="sendEmail()" class="btn btn2">
+              Submit
+            </button>
+          </form>
+        </section>
+      </section>
+      <div class="copyright">
+        <p>Copyright &copy 2024 Dinehkumar. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
